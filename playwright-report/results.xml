@@ -1,0 +1,50 @@
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="7.88758">
+<testsuite name="foundation\app-startup.spec.ts" timestamp="2025-09-26T16:43:57.024Z" hostname="foundation-tests" tests="1" failures="1" skipped="0" time="6.294" errors="0">
+<testcase name="App startup - HookHunt › renders the framework host and HookHunt intro screen" classname="foundation\app-startup.spec.ts" time="6.294">
+<failure message="app-startup.spec.ts:4:7 renders the framework host and HookHunt intro screen" type="FAILURE">
+<![CDATA[  [foundation-tests] › foundation\app-startup.spec.ts:4:7 › App startup - HookHunt › renders the framework host and HookHunt intro screen 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator:  locator('[data-testid="hookhunt-intro"]')
+    Expected: visible
+    Received: <element(s) not found>
+    Timeout:  5000ms
+
+    Call log:
+      - Expect "toBeVisible" with timeout 5000ms
+      - waiting for locator('[data-testid="hookhunt-intro"]')
+
+
+      16 |   // The HookHunt intro screen root should be present
+      17 |   const intro = page.locator('[data-testid="hookhunt-intro"]');
+    > 18 |   await expect(intro).toBeVisible();
+         |                       ^
+      19 |
+      20 |   // Optionally ensure some main content exists inside the router (screen mounted)
+      21 |   // We check for any button presence in the main area
+        at C:\Users\pbziu\OneDrive\Dokumente\Development\HookHunt\HookHunt\tests\foundation\app-startup.spec.ts:18:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\test-failed-1.png]]
+
+[[ATTACHMENT|..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\video.webm]]
+
+[[ATTACHMENT|..\test-results\foundation-app-startup-App-36f91-t-and-HookHunt-intro-screen-foundation-tests\error-context.md]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
